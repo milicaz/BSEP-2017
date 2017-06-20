@@ -1,0 +1,200 @@
+.bg{
+	background: url(images/salon.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color:white;
+	padding-left: 40px;
+	padding-top: 10px;
+	color: white;
+}
+
+.centered
+{
+    width:300px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.centered2
+{
+    width:600px;
+    margin-right:auto;
+    margin-left:auto;
+}
+.centered3
+{
+    text-align: center;
+}
+.buttonsRight{
+    width:150px;
+    margin-left:auto;
+}
+
+h1, .button{
+	text-align: center;
+}
+
+h1{
+	padding-top: 20px;
+   
+}
+input { 
+    background-color: white;
+    color: black;
+}
+
+.table {
+   	border: 1px solid black;
+   	text-align:center;
+   	padding: 15px;
+   	height: 30px;
+   	table-layout:fixed;
+	background-color: #333333;
+    color:white;
+    border-collapse: collapse;
+}
+td, th{
+   text-align:center;
+}
+td, th {
+  word-wrap: break-word;
+}
+
+.right {
+    position: -15px; 
+}
+
+.nav > li > a:focus, 
+.nav > li > a:hover 
+{
+    text-decoration: underline;
+    background-color: whitesmoke;
+}
+
+.navbar-btn{
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+.navbar-btn:hover {
+   background-color: whitesmoke;
+    color: #333333;
+}
+
+.navbar-btn:focus {
+    background-color: whitesmoke;
+    color: #333333;
+}
+.dropdown:hover .dropdown-menu {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.inverse-dropdown {
+    background-color: #222;
+    color: whitesmoke;
+    border-color: #222;
+    text-align:center;
+    border-style: solid;
+    width:100%;
+}
+.inverse-dropdown:hover{
+    color:#000;
+    background-color:  #fff;
+    border-style: solid;
+    width:100%;
+}
+.free {
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    
+}
+.remove {
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;;
+}
+.reserved {
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;    
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;;
+}
+.center{
+    text-align:center;
+}
+input[readonly].default-cursor {
+    cursor: default;
+}
+input[ng-readonly].default-cursor {
+    cursor: default;
+}
+
+.clicked {
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: #fff;
+    background-color: #004080;
+    border-color: #357ebd;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.map-canvas {
+	height: 400px;
+	width: 400px;
+}
+.select{
+    color:black;
+    background-color: white;
+    width:200px !important;
+}
+.chart {
+    width: 100%;
+    height: 400px;
+    background-color:white;
+    color:black;
+}

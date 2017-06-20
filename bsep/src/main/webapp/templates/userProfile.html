@@ -1,0 +1,28 @@
+<div class=" col-sm-4 col-sm-offset-4 center">
+    <form name="manager">
+
+        <label>Name: </label>
+        <input name="name" type="text" onkeydown="checkInputText()" ng-model="user.name" class="form-control" required/>
+
+        <div ng-if = "user.surname != undefined">
+            <label>Surname: </label>
+            <input name="surname" type="text" onkeydown="checkInputText()" ng-model="user.surname" class="form-control" required/>
+        </div>
+
+        <label>Email: </label>
+        <input name="email" type="text" ng-model="user.email" class="form-control" disabled/>
+
+        <label>Password: </label>
+        
+        <input type="{{inputType}}" ng-model="user.password" class="form-control" />
+        <input type="checkbox" id="checkbox" ng-model="passwordCheckbox" ng-click="hideShowPassword()" />
+        <label ng-if="passwordCheckbox">Hide password</label>
+        <label ng-if="!passwordCheckbox">Show password</label>  
+
+        <br><br>
+
+        <div class="button">
+            <button type="submit" class="btn btn-primary" ng-click="manager.$valid && updateManager()"><span class="glyphicon glyphicon-ok"></span> Update</button>
+        </div>
+    </form>
+</div>

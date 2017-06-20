@@ -1,0 +1,22 @@
+<div>
+
+		<div class="col-sm-8">
+			<h3>Shelfs:</h3>
+			<table class="table table-bordered sortable">
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Price</th>
+				</tr>
+				<tr ng-repeat="shelf in shelfs">
+					<td>{{shelf.id}}</td>
+					<td>{{shelf.name}}</td>
+					<td>{{shelf.description}}</td>
+					<td>{{shelf.price}}</td>
+				</tr>
+			
+			</table>
+	
+	</div>
+</div>
