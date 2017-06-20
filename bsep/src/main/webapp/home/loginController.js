@@ -16,12 +16,12 @@ app.controller('loginController', ['$scope', '$window', '$location', '$state', '
 						var user = [];
 	                    user.push(response.data);
 	                    $window.localStorage.setItem("user", JSON.stringify(user));
-						$state.go('helloAdmin');
+						$state.go('admin');
 					}else if(response.data.role=="BUYER"){
 						var user = [];
 	                    user.push(response.data);
 	                    $window.localStorage.setItem("user", JSON.stringify(user));
-	                    $state.go('helloBuyer');
+	                    $state.go('admin');
 					}
 					else
 						$state.transitionTo('other');

@@ -10,16 +10,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 	        controller : 'loginController'
 	    })
 	    
-	    .state('helloAdmin', {
-	    	url : '/helloAdmin',
-	    	templateUrl : 'hello.html'
-	    })
-	    
-	    .state('helloBuyer', {
-	    	url : '/helloBuyer',
-	    	templateUrl : 'hello1.html'
-	    })
-	    
 	    .state('catalog', {
 	    	url : '/catalog',
 	    	templateUrl : 'home/catalog.html',
@@ -56,7 +46,43 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 	    .state('notification', {
 	    	url : '/notification',
 	      	templateUrl : 'home/notification.html'
-	    });
+	    })
+	    
+	    .state('admin', {
+	    	url : '/admin',
+	    	templateUrl : 'admin/admin.html',
+	    	controller : 'adminController'
+	    })
+	    
+	    .state('buyer', {
+	    	url : '/buyer',
+	    	templateUrl : 'buyer/buyer.html',
+	    	controller : 'buyerController'
+	    })
+	    
+	    .state('admin.bed', {
+			 url : '/bed',
+			 templateUrl : 'admin/bed.html',
+			 controller : 'adminController'
+		 })
+		 
+		 .state('admin.chair', {
+			 url : '/chair',
+			 templateUrl : 'admin/chair.html',
+			 controller : 'adminController'
+		 })
+		 
+		 .state('admin.shelf', {
+			 url : '/shelf',
+			 templateUrl : 'admin/shelf.html',
+			 controller : 'adminController'
+		 })
+	    
+	    .state('admin.basket', {
+			 url : '/basket',
+			 templateUrl : 'admin/basket.html',
+			 controller : 'adminController'
+		 });
 
 
 }]);

@@ -1,0 +1,37 @@
+<div>
+
+	<div class="col-sm-8">
+	
+		<h3>Ordered bed:</h3>
+		<table class="table table-bordered sortable">
+			<tr>
+				<th>Bed id</th>
+				<th>Bed name</th>
+				<th>Bed price</th>
+			</tr>
+			<tr ng-repeat="bas in currentBasket">
+				<td><p ng-repeat = "beds in bas.beds">{{beds.bed.id}}</p></td>
+				<td><p ng-repeat = "beds in bas.beds">{{beds.bed.name}}</p></td>
+				<td><p ng-repeat = "beds in bas.beds">{{beds.bed.price}}</p></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="col-sm-8">
+	
+		<h3>Ordered chair:</h3>
+		<table class="table table-bordered sortable">
+			<tr>
+				<th>Chair Id</th>
+				<th>Chair name</th>
+				<th>Chair price</th>
+			</tr>
+			<tr ng-repeat="bas in currentBasket">
+				<td><p ng-repeat = "chairs in bas.chairs">{{chairs.chair.id}}</p></td>
+				<td><p ng-repeat = "chairs in bas.chairs">{{chairs.chair.name}}</p></td>
+				<td><p ng-repeat = "chairs in bas.chairs">{{chairs.chair.price}}</p></td>
+			</tr>
+		</table>
+	</div>
+	
+</div>

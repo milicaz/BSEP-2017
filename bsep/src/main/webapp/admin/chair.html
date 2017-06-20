@@ -1,0 +1,25 @@
+<div>
+
+		<div class="col-sm-8">
+			<h3>Chairs:</h3>
+			<table class="table table-bordered sortable">
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Price</th>
+					<th>Add to basket</th>
+				</tr>
+				<tr ng-repeat="c in chair">
+					<td>{{c.id}}</td>
+					<td>{{c.name}}</td>
+					<td>{{c.description}}</td>
+					<td>{{c.price}}</td>
+					<td><button type="button" class="btn btn-primary" ng-click="addChair(c)">
+		    	<span class="glyphicon glyphicon-ok"></span></button></td>
+				</tr>
+			
+			</table>
+	
+	</div>
+</div>
