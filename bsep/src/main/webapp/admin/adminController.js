@@ -9,6 +9,7 @@ app.controller('adminController', ['$scope', '$window', '$location', 'adminServi
     $scope.currentOrder={};
     $scope.currentOrder1={};
     $scope.currentBasket = {};
+    $scope.orderedBed = {};
 	
 	adminService.findAllBed().then (
 			function(response) {
@@ -98,6 +99,22 @@ app.controller('adminController', ['$scope', '$window', '$location', 'adminServi
 					);
 				}
 		);
+	}
+	
+	$scope.cancelBed = function(bed) {
+		$scope.orderedBed = bed;
+		for(be in $scope.orderedBed){
+			console.log("Ordered bed" + be);
+		}
+		for(b in $scope.currentOrder){
+			if(b == bed){
+				adminService.deleteBed(bed.id).then (
+					function(response){
+						alert("Bed has been deleted");
+					}	
+				);
+			}
+		}
 	}
 	
 	

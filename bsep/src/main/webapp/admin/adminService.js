@@ -35,4 +35,8 @@ app.service('adminService', ['$http', function($http){
 		return $http.get(urlBasket);
 	}
 	
+	this.deleteBed = function(id) {
+		return $http.delete(urlOrderedBed+"?id"+id);
+	}
+	
 }]);

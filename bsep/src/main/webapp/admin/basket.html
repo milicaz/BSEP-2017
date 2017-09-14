@@ -13,6 +13,8 @@
 				<td><p ng-repeat = "beds in bas.beds">{{beds.bed.id}}</p></td>
 				<td><p ng-repeat = "beds in bas.beds">{{beds.bed.name}}</p></td>
 				<td><p ng-repeat = "beds in bas.beds">{{beds.bed.price}}</p></td>
+				<td><button  type="button" class="btn btn-primary" 
+			    	ng-click="cancelBed(bed)">Cancel</button></td>
 			</tr>
 		</table>
 	</div>

@@ -3,7 +3,8 @@ app.controller('loginController', ['$scope', '$window', '$location', '$state', '
 
 	function init(){
 		$scope.loginData={};
-        $window.localStorage.removeItem("user");   
+        $window.localStorage.removeItem("user");
+        $scope.currentBasket = {};
 	}
 	
 	init();
